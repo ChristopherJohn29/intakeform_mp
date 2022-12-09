@@ -22,7 +22,7 @@ class IntakeFormModel extends CI_Model {
 
 		$this->db->select('*');
         $this->db->where('provider_supervising_MD', 1);
-		$this->db->where('provider_inactive', 0);
+		$this->db->where('provider_inactive !=', 1);
         $this->db->from('provider');
         $result = $this->db->get()->result_array();
 
