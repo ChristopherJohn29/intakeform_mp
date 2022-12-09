@@ -23,7 +23,7 @@
         
         <div>
             
-            <form method="POST" action="<?=base_url()?>/intakeform/submit">
+            <form method="POST" action="<?=base_url()?>/IntakeForm/submit">
                 <div class="section-handler">
                     <div class="sub-header"><h6><span>Patient Information</span></h6></div>
                     <div class="form-group row">
