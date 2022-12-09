@@ -234,18 +234,19 @@
                     <div class="form-group row">
                         <label for="" class="col-sm-4 col-form-label">Preferred Supervising MD <span class="asterisk">*</span></label>
                         <div class="col-sm-8">
-                            <div class="custom-control custom-radio">
-                              <input type="radio" id="smd1" name="preferred_smd" class="custom-control-input">
-                              <label class="custom-control-label" for="smd1">Dr. Maria De Leon (NPI # 1285775437)</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                              <input type="radio" id="smd2" name="preferred_smd" class="custom-control-input">
-                              <label class="custom-control-label" for="smd2">Dr. Linda Enriquez (NPI # 1669541041)</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                              <input type="radio" id="smd3" name="preferred_smd" class="custom-control-input">
-                              <label class="custom-control-label" for="smd3">Dr. Daisy Bautista (NPI # 1306856992) For Recertification</label>
-                            </div>
+                            <?php 
+                            
+                            foreach ($supermd as $key => $value) {
+                                ?>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="smd1" name="preferred_smd" class="custom-control-input" value="<?=$value['provider_firstname']?> <?=$value['provider_lastname']?>">
+                                    <label class="custom-control-label" for="smd1">DR. <?=$value['provider_firstname']?> <?=$value['provider_lastname']?></label>
+                                </div>
+                                <?php
+                            }
+                            
+                            ?>
+                            
                         </div>
                     </div>
                 </div>

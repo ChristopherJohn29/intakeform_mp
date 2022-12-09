@@ -3,18 +3,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class IntakeForm extends CI_Controller{
 	
-
 	public function index()
 	{
+        $this->load->model('IntakeFormModel');
 
-
-		$this->load->view('form');
+        $data['supermd'] = $this->IntakeFormModel->getSuperMd();
+		$this->load->view('form', $data);
 	}
 
     public function submit()
 	{
 
-        $this->load->model('IntakeFormModel');
+        
 
         $date = strtotime($this->input->post('pi_dob'));
         $dob = date('Y-m-d',  $date);

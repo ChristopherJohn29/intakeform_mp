@@ -18,4 +18,15 @@ class IntakeFormModel extends CI_Model {
 		return $this->db->insert_id();
 	}
 
+	public function getSuperMd(){
+
+		$this->db->select('*');
+        $this->db->where('provider_supervising_MD', 1);
+        $this->db->from('provider');
+        $result = $this->db->get()->result_array();
+
+        return $result;
+	}
+
+
 }
