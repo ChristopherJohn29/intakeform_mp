@@ -46,7 +46,20 @@ class IntakeForm extends CI_Controller{
             'preferred_smd' => $this->input->post('preferred_smd'),
 		];
 
-        $this->IntakeFormModel->save($data);
+        if($this->IntakeFormModel->save($data)){
 
+            $_SESSION['saved'] = true;
+            redirect('IntakeForm/thankyou');
+        }
+    
 	}
+
+    public function thankyou(){
+        if($_SESSION['saved']) {
+            unset($_SESSION['saved']);
+            $this->load->view('thankyou');
+        } else {
+            redirect('IntakeForm/index');
+        }
+    }
 }
