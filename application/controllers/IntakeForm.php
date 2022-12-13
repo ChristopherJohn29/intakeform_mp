@@ -14,7 +14,7 @@ class IntakeForm extends CI_Controller{
     public function submit()
 	{
 
-        
+        $this->load->model('IntakeFormModel');
 
         $date = strtotime($this->input->post('pi_dob'));
         $dob = date('Y-m-d',  $date);
