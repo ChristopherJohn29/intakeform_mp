@@ -45,7 +45,7 @@ class IntakeForm extends CI_Controller{
             'pf_phone' => $this->input->post('pf_phone'),
             'pf_fax' => $this->input->post('pf_fax'),
             'preferred_smd' => $this->input->post('preferred_smd'),
-            'date_of_sent' => date('m/d/Y')
+            'date_of_sent' => date('Y-m-d')
 		];
 
 
