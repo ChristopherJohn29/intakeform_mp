@@ -22,7 +22,7 @@ class IntakeForm extends CI_Controller{
         $date_discharge = strtotime($this->input->post('rvr_date_discharged'));
         $discharge = date('Y-m-d',  $date_discharge);
         date_default_timezone_set("America/New_York");
-        
+
 		$data = [
 			'pi_patient_name' => $this->input->post('pi_patient_name'),
 			'pi_dob' => $dob,
@@ -45,7 +45,7 @@ class IntakeForm extends CI_Controller{
             'pf_phone' => $this->input->post('pf_phone'),
             'pf_fax' => $this->input->post('pf_fax'),
             'preferred_smd' => $this->input->post('preferred_smd'),
-            'date_of_sent' => date()
+            'date_of_sent' => date('m/d/Y')
 		];
 
 
