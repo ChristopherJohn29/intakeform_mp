@@ -21,7 +21,8 @@ class IntakeForm extends CI_Controller{
 
         $date_discharge = strtotime($this->input->post('rvr_date_discharged'));
         $discharge = date('Y-m-d',  $date_discharge);
-
+        date_default_timezone_set("America/New_York");
+        
 		$data = [
 			'pi_patient_name' => $this->input->post('pi_patient_name'),
 			'pi_dob' => $dob,
