@@ -46,7 +46,40 @@ class IntakeForm extends CI_Controller{
             'preferred_smd' => $this->input->post('preferred_smd'),
 		];
 
+
+
+
         if($this->IntakeFormModel->save($data)){
+
+            $tmpDir = sys_get_temp_dir() . '/';
+            $html = $this->load->view('homevisitrequest/pdf', $data, true);
+
+            $this->load->library(['email', 'PDF']);
+
+            $config = array(
+                'wordwrap'  => true,
+                'protocol'  => 'smtp',
+                'smtp_host' => 'ssl://smtp.bizmail.yahoo.com',
+                'smtp_port' => 465,
+                'smtp_user' => 'info@themobiledrs.com',
+                'smtp_pass' => 'ucjemnxyefywdbyw',
+                'mailtype'  => 'html',
+                'newline' 	=> "\r\n"
+            );
+
+            $this->email->initialize($config);
+
+            $filename = 'Home Visit Form PDF';
+            $this->pdf->generate_hv($html, $tmpDir . $filename);
+
+            $this->email->from('info@themobiledrs.com', 'The MobileDrs');
+            // $this->email->reply_to('michelle@themobiledrs.com', 'The MobileDrs');
+            $this->email->to($data['pf_email']);
+            $this->email->subject('Home visit request form');
+            $this->email->message('Attached is a copy of the Home Visit Request form submitted to The Mobile Drs.');
+            $this->email->attach($tmpDir . $filename . '.pdf', 'attachment', $filename . '.pdf');
+
+            $send = $this->email->send();
 
             $_SESSION['saved'] = true;
             redirect('IntakeForm/thankyou');
