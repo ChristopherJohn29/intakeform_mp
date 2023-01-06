@@ -18,7 +18,10 @@
     <div class="container intake-form">
     <!-- Content here -->
         <div class="text-center"><img src="https://themobiledrs.com/wp-content/uploads/2019/11/tmd-new-logo-slogan.png" width="50%"></div>
-        <div class="headline text-center"><h2>THANKYOU HOME VISIT REQUEST SENT</h2></div>
+        <div class="headline text-center"><h2>Thank you for sending your request.</h2>
+
+        <p>You will be contacted shortly after the patient's eligibility has been reviewed.</p>
+      </div>
         
     </div>
 
