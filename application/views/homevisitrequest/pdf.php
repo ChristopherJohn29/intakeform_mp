@@ -66,7 +66,7 @@
                   
                   ?>
                </td>
-               <td width="120px" height="50px">
+               <td width="118px" height="50px">
                <?php 
                   if($pi_gender == 'female'){
                     echo '<b>X</b>';
@@ -95,13 +95,16 @@
                </td>
             </tr>
             <tr>
-               <td colspan="3" width="520px" height="18px">
+               <td colspan="3" width="520px" height="18px" style="font-size: 1px; ">
+               </td>
+            </tr>
+            <tr>
+               <td colspan="3" width="520px" height="18px" style="font-size: 1px; ">
                </td>
             </tr>
             <tr>
                <td colspan="2" width="338px"  height="20px">
-                  <label></label><br>
-                  <label>
+                  
                      <?php
                   if($ii_medicare){
                      echo $ii_medicare;
@@ -110,11 +113,9 @@
                   }
                   ?>
                   
-                  </label>
                </td>
                <td width="173px" height="20px">
-                  <label></label><br>
-                  <label>
+                  
                   <?php
                   if($ii_ssn){
                      echo $ii_ssn;
@@ -123,7 +124,6 @@
                   }
                   ?>
                
-               </label>
                </td>
             </tr>
             <tr>
@@ -163,15 +163,16 @@
                </td>
             </tr>
             <tr>
-               <td colspan="3" width="520px" height="18px">
+               <td colspan="3" width="520px" height="18px" style="font-size: 15px; ">
                </td>
             </tr>
             <tr>
-               <td colspan="3" width="520px" height="18px">
+               <td colspan="3" width="520px" height="18px" style="font-size: 14px; ">
                </td>
             </tr>
+      
             <tr>
-               <td colspan="" width="205px" height="18px" style="font-size: 14px; ">
+               <td colspan="" width="200px" height="18px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Referral from Home Health'){
                     echo '<b>X</b>';
@@ -180,7 +181,7 @@
                   ?>
                
                </td>
-               <td colspan="" width="278px" height="18px" style="font-size: 14px; ">
+               <td colspan="" width="283px" height="18px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Discharged from Hospital'){
                     echo '<b>X</b>';
@@ -312,7 +313,7 @@
                </td>
             </tr>
             <tr>
-               <td width="230px" height="18px" >
+               <td width="229px" height="18px" >
                <?php 
                   if($preferred_smd == '38'){
                     echo '<b>X</b>';
@@ -320,7 +321,7 @@
                   
                   ?>
                </td>
-               <td width="180px" height="18px" >
+               <td width="178px" height="18px" >
                <?php 
                   if($preferred_smd == '53'){
                     echo '<b>X</b>';
