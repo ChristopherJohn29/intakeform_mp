@@ -37,7 +37,7 @@
                     <div class="form-group row">
                         <label for="dateofBIrth" class="col-sm-4 col-form-label">Date of Birth <span class="asterisk">*</span></label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control form-control-lg" id="date-of-birth" placeholder="" required name="pi_dob">
+                            <input type="date" class="form-control form-control-lg" id="date-of-birth" placeholder="" required name="pi_dob">
                             <div class="valid-feedback">Date of Birth is required.</div>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
                                         <small class="form-text text-muted">Hospital</small>
                                     </div>
                                     <div class="col-md-4 mb-3">
-                                        <input type="text" class="form-control form-control-lg" name="rvr_date_discharged" id="facility-name" placeholder="">
+                                        <input type="date" class="form-control form-control-lg" name="rvr_date_discharged" id="facility-name" placeholder="">
                                         <small class="form-text text-muted">Date Discharged</small>
                                     </div>
                                 </div>
