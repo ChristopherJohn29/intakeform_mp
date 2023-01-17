@@ -191,8 +191,8 @@
                </td>
                <td colspan="" width="100px" height="18px">
                <?php
-               if($rvr_reason_for_visit){
-                echo date('m/d/Y', strtotime($rvr_date_discharged));
+               if($rvr_reason_for_visit == 'Discharged from Hospital'){
+                  echo date('m/d/Y', strtotime($rvr_date_discharged));
                }
                ?>
                </td>
