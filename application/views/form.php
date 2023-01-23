@@ -134,7 +134,7 @@
                             </div>
                             <div class="custom-control custom-radio">
                               <input type="radio" id="rfv3" name="rvr_reason_for_visit" value="Referral from Home Health" class="custom-control-input">
-                              <label class="custom-control-label" for="rfv3">Referral from Home Health</label>
+                              <label class="custom-control-label" for="rfv3">Referral to Home Health</label>
                             </div>
 
                             <div class="custom-control custom-radio">
