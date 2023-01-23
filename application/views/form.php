@@ -106,9 +106,9 @@
                 <div class="section-handler">
                     <div class="sub-header"><h6><span>Insurance Information</span></h6></div>
                     <div class="form-group row">
-                        <label for="medicareID" class="col-sm-4 col-form-label">Medicare part B, Insurance ID#</label>
+                        <label for="medicareID" class="col-sm-4 col-form-label">Medicare part B, Insurance ID# <span class="asterisk">*</span></label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control form-control-lg" id="date-of-birth" placeholder="" name="ii_medicare">
+                            <input type="text" required class="form-control form-control-lg" id="date-of-birth" placeholder="" name="ii_medicare">
                         </div>
                     </div>
                     <div class="form-group row">
