@@ -155,7 +155,7 @@
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <input type="date" class="form-control form-control-lg" name="rvr_date_discharged" id="rvr_date_discharged" placeholder="">
-                                        <small class="form-text text-muted">Date Discharged</small>
+                                        <small class="form-text text-muted">Date Discharged <span class="asterisk">*</span></small>
                                     </div>
                                 </div>
 
