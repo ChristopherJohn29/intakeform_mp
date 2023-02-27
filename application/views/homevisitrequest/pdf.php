@@ -252,14 +252,23 @@
                   <br>
                </td>
             </tr>
+
+            <?php
+                if(strlen($rvr_additional_comment) < 130){
+                  ?>
+                  <tr>
+                     <td colspan="3" height="15px" style="font-size: 10px; ">
+                     </td>
+                  </tr>
+                  <?php
+                }
+               ?>
+
             <tr>
                <td colspan="3" height="15px" style="font-size: 1px; ">
                </td>
             </tr>
-            <tr>
-               <td colspan="3" height="15px" style="font-size: 10px; ">
-               </td>
-            </tr>
+      
             <tr>
                <td colspan="3" height="15px" style="font-size: 5px; ">
                </td>
