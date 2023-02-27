@@ -126,7 +126,7 @@
                         <div class="col-sm-8">
                             <div class="custom-control custom-radio">
                               <input type="radio" id="rfv1" name="rvr_reason_for_visit" value="Follow-up Visit" class="custom-control-input">
-                              <label class="custom-control-label" for="rfv1">Follow-up Visit</label>
+                              <label class="custom-control-label" for="rfv1">Follow-up Visit (Recertification)</label>
                             </div>
                             <div class="custom-control custom-radio">
                               <input type="radio" id="rfv2" name="rvr_reason_for_visit" value="Discharged from Hospital" class="custom-control-input">
@@ -134,7 +134,7 @@
                             </div>
                             <div class="custom-control custom-radio">
                               <input type="radio" id="rfv3" name="rvr_reason_for_visit" value="Referral from Home Health" class="custom-control-input">
-                              <label class="custom-control-label" for="rfv3">Referral to Home Health</label>
+                              <label class="custom-control-label" for="rfv3">Referral to Home Health (New Start of Care)</label>
                             </div>
 
                             <div class="custom-control custom-radio">
@@ -154,7 +154,7 @@
                                         <small class="form-text text-muted">Hospital</small>
                                     </div>
                                     <div class="col-md-4 mb-3">
-                                        <input type="date" class="form-control form-control-lg" name="rvr_date_discharged" id="facility-name" placeholder="">
+                                        <input type="date" class="form-control form-control-lg" name="rvr_date_discharged" id="rvr_date_discharged" placeholder="">
                                         <small class="form-text text-muted">Date Discharged</small>
                                     </div>
                                 </div>
@@ -281,8 +281,10 @@
 
         if(jQuery('#rfv2').is(':checked')) {
             jQuery('#discharged-from-hospital').css('display','flex');
+            jQuery('#rvr_date_discharged').attr('required', 'required');
         } else {
             jQuery('#discharged-from-hospital').css('display','none');
+            jQuery('#rvr_date_discharged').removeAttr('required');
         }
     });
 </script>
