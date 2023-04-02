@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '139.144.29.38',
-	'username' => 'shinemmgnew',
-	'password' => '5h!n3wwg_dr5',
-	'database' => 'mobile_drs',
+	'hostname' => '198.74.50.181',
+	'username' => 'mpnew',
+	'password' => 'mobile-PHYSICIAN-#1',
+	'database' => 'mobile-physician',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
