@@ -17,7 +17,7 @@
     
     <div class="container intake-form">
     <!-- Content here -->
-        <div class="text-center"><img src="https://themobiledrs.com/wp-content/uploads/2019/11/tmd-new-logo-slogan.png" width="50%"></div>
+        <div class="text-center"><img src="<?=base_url()?>/assets/PhysicianMedicalGroup_logo.png" width="50%"></div>
         <div class="headline text-center"><h2>HOME VISIT REQUEST</h2></div>
         <div class="section-handler"><small>Fields with <span class="asterisk">*</span> are required.</small></div>
         
