@@ -74,7 +74,7 @@ class IntakeForm extends CI_Controller{
             $filename = 'Home Visit Form PDF';
             $this->pdf->generate_hv($html, $tmpDir . $filename);
 
-            $this->email->from('intake@mobilephysicians.net', 'Mobile Physician');
+            $this->email->from('intake@mobilephysicians.net', 'Mobile Physicians');
             // $this->email->reply_to('michelle@themobiledrs.com', 'The MobileDrs');
             $this->email->to($data['pf_email']);
             $this->email->subject('Home visit request form');
@@ -84,7 +84,7 @@ class IntakeForm extends CI_Controller{
             $send = $this->email->send();
 
 
-            $this->email->from('intake@mobilephysicians.net', 'Mobile Physician');
+            $this->email->from('intake@mobilephysicians.net', 'Mobile Physicians');
             // $this->email->reply_to('michelle@themobiledrs.com', 'The MobileDrs');
             $this->email->to('intake@mobilephysicians.net');
             $this->email->subject('Home visit request form');
