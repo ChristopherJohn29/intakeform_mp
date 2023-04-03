@@ -4,7 +4,7 @@
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>The Mobile Drs - Intake Form</title>
+      <title>Mobile Physician - Intake Form</title>
       <style>
          label {
          margin-top: 6px;
