@@ -81,7 +81,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="preferredLanguage" class="col-sm-4 col-form-label">Race</label>
+                        <label for="preferredLanguage" class="col-sm-4 col-form-label">rvr_additional_comment</label>
                         <div class="col-sm-8">
                             <input type="text" class="form-control form-control-lg" id="pi_race" placeholder="" name="pi_race">
                         </div>
@@ -132,30 +132,17 @@
                         <label for="reasonforVisit" class="col-sm-4 col-form-label">Reason for Visit <span class="asterisk">*</span></label>
                         <div class="col-sm-8">
                             <div class="custom-control custom-radio">
+                              <input type="radio" id="rfv1" name="rvr_reason_for_visit" value="Follow-up Visit" class="custom-control-input">
+                              <label class="custom-control-label" for="rfv1">Follow-up Visit (Recertification)</label>
+                            </div>
+                            <div class="custom-control custom-radio">
                               <input type="radio" id="rfv2" name="rvr_reason_for_visit" value="Discharged from Hospital" class="custom-control-input">
                               <label class="custom-control-label" for="rfv2">Discharged from Hospital</label>
                             </div>
                             <div class="custom-control custom-radio">
-                              <input type="radio" id="rfv3" name="rvr_referral_to_home_health" value="Referral from Home Health" class="custom-control-input">
-                              <label class="custom-control-label" for="rfv3">Referral to Home Health</label>
+                              <input type="radio" id="rfv3" name="rvr_reason_for_visit" value="Referral from Home Health" class="custom-control-input">
+                              <label class="custom-control-label" for="rfv3">Referral to Home Health (New Start of Care)</label>
                             </div>
-
-                            <div class="custom-control">
-                              <input type="checkbox" id="rfv3" name="rvr_cane" value="Referral from Home Health">
-                              <label class="custom-control-label" for="rfv3">Cane</label>
-                            </div>
-                            <div class="custom-control">
-                              <input type="checkbox" id="rfv3" name="rvr_wheelchair" value="Referral from Home Health">
-                              <label class="custom-control-label" for="rfv3">Wheelchair</label>
-                            </div>
-                            <div class="custom-control">
-                              <input type="checkbox" id="rfv3" name="rvr_other" value="Referral from Home Health">
-                              <label class="custom-control-label" for="rfv3">Other</label>
-                              <input type="text" class="form-control form-control-lg" name="rvr_other_text" id="facility-name" placeholder="">
-                            </div>
-
-
-                         
 
                             <div class="custom-control custom-radio">
                               <input type="radio" id="rfv4" name="rvr_reason_for_visit" value="Transfer of Care" class="custom-control-input">
@@ -165,7 +152,6 @@
                             <div class="custom-control custom-radio">
                               <input type="radio" id="rfv5" name="rvr_reason_for_visit" value="Other Reason" class="custom-control-input">
                               <label class="custom-control-label" for="rfv5">Other Reason</label>
-                              
                             </div>
                             
                             <div class="hidden-fields">
