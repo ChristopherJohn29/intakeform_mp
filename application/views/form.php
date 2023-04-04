@@ -140,16 +140,16 @@
                               <label class="custom-control-label" for="rfv3">Referral to Home Health</label>
                             </div>
 
-                            <div class="custom-control custom-radio">
-                              <input type="checkbox" id="rfv3" name="rvr_cane" value="Referral from Home Health" class="custom-control-input">
+                            <div class="custom-control">
+                              <input type="checkbox" id="rfv3" name="rvr_cane" value="Referral from Home Health">
                               <label class="custom-control-label" for="rfv3">Cane</label>
                             </div>
-                            <div class="custom-control custom-radio">
-                              <input type="checkbox" id="rfv3" name="rvr_wheelchair" value="Referral from Home Health" class="custom-control-input">
+                            <div class="custom-control">
+                              <input type="checkbox" id="rfv3" name="rvr_wheelchair" value="Referral from Home Health">
                               <label class="custom-control-label" for="rfv3">Wheelchair</label>
                             </div>
-                            <div class="custom-control custom-radio">
-                              <input type="checkbox" id="rfv3" name="rvr_other" value="Referral from Home Health" class="custom-control-input">
+                            <div class="custom-control">
+                              <input type="checkbox" id="rfv3" name="rvr_other" value="Referral from Home Health">
                               <label class="custom-control-label" for="rfv3">Other</label>
                               <input type="text" class="form-control form-control-lg" name="rvr_other_text" id="facility-name" placeholder="">
                             </div>
