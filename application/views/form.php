@@ -150,6 +150,19 @@
                             </div>
 
                             <div class="custom-control custom-radio">
+                              <input type="radio" id="rvr_cane" name="rvr_cane" value="1" class="custom-control-input">
+                              <label class="custom-control-label" for="rfv5">Paient is using cane</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                              <input type="radio" id="rvr_wheelchair" name="rvr_wheelchair" value="1" class="custom-control-input">
+                              <label class="custom-control-label" for="rfv5">Paient is using wheelchair</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                              <input type="radio" id="rvr_reason_for_visit" name="rvr_reason_for_visit" value="Other Reason" class="custom-control-input">
+                              <label class="custom-control-label" for="rfv5">Other</label>
+                            </div>
+
+                            <div class="custom-control custom-radio">
                               <input type="radio" id="rfv5" name="rvr_reason_for_visit" value="Other Reason" class="custom-control-input">
                               <label class="custom-control-label" for="rfv5">Other Reason</label>
                             </div>
