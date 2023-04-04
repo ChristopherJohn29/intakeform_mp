@@ -81,7 +81,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="preferredLanguage" class="col-sm-4 col-form-label">rvr_additional_comment</label>
+                        <label for="preferredLanguage" class="col-sm-4 col-form-label">Race</label>
                         <div class="col-sm-8">
                             <input type="text" class="form-control form-control-lg" id="pi_race" placeholder="" name="pi_race">
                         </div>
