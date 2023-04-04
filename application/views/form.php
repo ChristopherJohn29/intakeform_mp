@@ -135,10 +135,14 @@
                               <input type="radio" id="rfv2" name="rvr_reason_for_visit" value="Discharged from Hospital" class="custom-control-input">
                               <label class="custom-control-label" for="rfv2">Discharged from Hospital</label>
                             </div>
+                            <div class="custom-control custom-radio">
+                              <input type="radio" id="rfv3" name="rvr_referral_to_home_health" value="Referral from Home Health" class="custom-control-input">
+                              <label class="custom-control-label" for="rfv3">Referral to Home Health</label>
+                            </div>
 
                             <div class="custom-control custom-radio">
                               <input type="checkbox" id="rfv3" name="rvr_cane" value="Referral from Home Health" class="custom-control-input">
-                              <label class="custom-control-label" for="rfv3">Referral to Home Health (New Start of Care)</label>
+                              <label class="custom-control-label" for="rfv3">Cane</label>
                             </div>
                             <div class="custom-control custom-radio">
                               <input type="checkbox" id="rfv3" name="rvr_wheelchair" value="Referral from Home Health" class="custom-control-input">
@@ -151,10 +155,7 @@
                             </div>
 
 
-                            <div class="custom-control custom-radio">
-                              <input type="radio" id="rfv3" name="rvr_referral_to_home_health" value="Referral from Home Health" class="custom-control-input">
-                              <label class="custom-control-label" for="rfv3">Referral to Home Health (New Start of Care)</label>
-                            </div>
+                         
 
                             <div class="custom-control custom-radio">
                               <input type="radio" id="rfv4" name="rvr_reason_for_visit" value="Transfer of Care" class="custom-control-input">
