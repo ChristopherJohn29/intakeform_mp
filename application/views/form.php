@@ -79,13 +79,6 @@
                             <input type="text" class="form-control form-control-lg" id="date-of-birth" placeholder="" name="pi_language">
                         </div>
                     </div>
-
-                    <div class="form-group row">
-                        <label for="preferredLanguage" class="col-sm-4 col-form-label">Race</label>
-                        <div class="col-sm-8">
-                            <input type="text" class="form-control form-control-lg" id="pi_race" placeholder="" name="pi_race">
-                        </div>
-                    </div>
                 </div>
                 
                 <div class="section-handler">
@@ -147,19 +140,6 @@
                             <div class="custom-control custom-radio">
                               <input type="radio" id="rfv4" name="rvr_reason_for_visit" value="Transfer of Care" class="custom-control-input">
                               <label class="custom-control-label" for="rfv4">Transfer of Care</label>
-                            </div>
-
-                            <div class="custom-control custom-radio">
-                              <input type="radio" id="rvr_cane" name="rvr_cane" value="1" class="custom-control-input">
-                              <label class="custom-control-label" for="rvr_cane">Paient is using cane</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                              <input type="radio" id="rvr_wheelchair" name="rvr_wheelchair" value="1" class="custom-control-input">
-                              <label class="custom-control-label" for="rvr_wheelchair">Paient is using wheelchair</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                              <input type="radio" id="rvr_other" name="rvr_other" value="1" class="custom-control-input">
-                              <label class="custom-control-label" for="rvr_other">Other</label>
                             </div>
 
                             <div class="custom-control custom-radio">
@@ -260,7 +240,7 @@
                                 ?>
                                 <div class="custom-control custom-radio">
                                     <input type="radio" id="smd<?=$key?>" name="preferred_smd" class="custom-control-input" value="<?=$value['provider_id']?>">
-                                    <label class="custom-control-label" for="smd<?=$key?>"><?=$value['provider_firstname']?> <?=$value['provider_lastname']?></label>
+                                    <label class="custom-control-label" for="smd<?=$key?>">DR. <?=$value['provider_firstname']?> <?=$value['provider_lastname']?></label>
                                 </div>
                                 <?php
                             }
