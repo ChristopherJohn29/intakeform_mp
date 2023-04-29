@@ -79,7 +79,7 @@ class PDF {
 		$pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
 
 		// set margins
-		$pdf->SetMargins(0, 80, 0, 0);
+		$pdf->SetMargins(0, 45, 0, 0);
 		$pdf->SetHeaderMargin(0);
 		$pdf->SetFooterMargin(0);
 
@@ -120,7 +120,7 @@ class PDF {
 		// disable auto-page-break
 		$pdf->SetAutoPageBreak(false, 0);
 		// set bacground image
-		$img_file = K_PATH_IMAGES.'tmd_pdf.jpg';
+		$img_file = K_PATH_IMAGES.'tmd_pdf.png';
 		$pdf->Image($img_file, 0, 0, 210, 297, '', '', '', false, 300, '', false, false, 0);
 		// restore auto-page-break status
 		$pdf->SetAutoPageBreak($auto_page_break, $bMargin);
