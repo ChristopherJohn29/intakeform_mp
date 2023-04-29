@@ -270,7 +270,7 @@
             </tr>
       
             <tr>
-               <td colspan="3" height="20px" style="font-size: 5px; ">
+               <td colspan="3" height="25px" style="font-size: 5px; ">
                </td>
             </tr>
         
