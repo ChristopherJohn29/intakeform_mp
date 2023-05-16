@@ -54,6 +54,19 @@ class IntakeForm extends CI_Controller{
         if($this->IntakeFormModel->save($data)){
 
             $tmpDir = sys_get_temp_dir() . '/';
+
+            $md = $this->IntakeFormModel->getSuperMd();
+
+            $mds = array();
+            $npi = array();
+            foreach ($md as $key => $value) {
+                $mds[$value['provider_id']] = $value['provider_firstname'].' '.$value['provider_lastname'];
+                $npi[$value['provider_id']] = $value['provider_npi'];
+            }
+
+            $data['mds'] = $mds;
+            $data['npi'] = $npi;
+            
             $html = $this->load->view('homevisitrequest/pdf', $data, true);
 
             $this->load->library(['email', 'PDF']);

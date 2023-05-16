@@ -16,7 +16,7 @@
       </style>
    </head>
    <body>
-      <table style="font-size: 13px; margin-top: 100px;" cellpadding="3">
+      <table style="font-size: 13px; margin-top: 200px;" cellpadding="3">
          <tbody>
             <tr>
                <td width="280px" >
@@ -192,7 +192,7 @@
                <td colspan="" width="100px" height="18px">
                <?php
                if($rvr_reason_for_visit == 'Discharged from Hospital'){
-                  echo date('m/d/Y', strtotime($rvr_date_discharged));
+                echo date('m/d/Y', strtotime($rvr_date_discharged));
                }
                ?>
                </td>
@@ -263,17 +263,20 @@
                   <?php
                 }
                ?>
-
+          
             <tr>
                <td colspan="3" height="15px" style="font-size: 1px; ">
                </td>
             </tr>
-      
+            
             <tr>
-               <td colspan="3" height="25px" style="font-size: 5px; ">
+               <td colspan="3" height="15px" style="font-size: 5px; ">
                </td>
             </tr>
-        
+            <tr>
+               <td colspan="3" height="15px">
+               </td>
+            </tr>
             <tr>
                <td height="15px" width="456px">
                <?='<label>  </label>'.$pf_name_of_facility?>
@@ -290,10 +293,10 @@
                <td width="231px" height="18px">
                <?='<label>  </label>'.$pf_phone?>
                </td>
-               <td width="225px" height="18px">
+               <td width="200px" height="18px">
                <?=$pf_fax?>
                </td>
-               <td width="220px" height="18px">
+               <td width="240px" height="18px">
                <?=$pf_email?>
                </td>
             </tr>
@@ -315,13 +318,24 @@
                </td>
             </tr>
             <tr>
-               <td colspan="3" height="18px" style="font-size: 10px;" >
+               <td colspan="3" height="12px" style="font-size: 10px;" >
                </td>
             </tr>
             <tr>
-               <td>
+               <td colspan="3" >
                <?php 
-                  echo $preferred_smd;
+                  echo $mds[$preferred_smd];
+                  
+                  ?>
+               </td>
+            
+               
+            </tr>
+
+            <tr>
+               <td colspan="3" >
+               <?php 
+                  echo "NPI #:".$npi[$preferred_smd];
                   
                   ?>
                </td>
