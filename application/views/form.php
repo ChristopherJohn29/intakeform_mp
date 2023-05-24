@@ -239,7 +239,7 @@
                             foreach ($supermd as $key => $value) {
                                 ?>
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" id="smd<?=$key?>" name="preferred_smd" class="custom-control-input" value="<?=$value['provider_id']?> <?=$value['provider_lastname']?>">
+                                    <input type="radio" id="smd<?=$key?>" name="preferred_smd" class="custom-control-input" value="<?=$value['provider_id']?>">
                                     <label class="custom-control-label" for="smd<?=$key?>"><?=$value['provider_firstname']?> <?=$value['provider_lastname']?></label>
                                 </div>
                                 <?php
