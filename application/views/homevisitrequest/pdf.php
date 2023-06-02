@@ -16,7 +16,7 @@
       </style>
    </head>
    <body>
-      <table style="font-size: 13px; margin-top: 230px;" cellpadding="3">
+      <table style="font-size: 13px; margin-top: 230px;" cellpadding="3" border="1">
          <tbody>
             <tr>
                <td colspan="2" width="488px"  height="10px" style="font-size: 12px;">
@@ -202,7 +202,7 @@
                </td>
             </tr>
             <tr>
-               <td colspan="" width="240px" height="20px" style="font-size: 14px; border:1px solid;">
+               <td colspan="" width="240px" height="20px" valign="bottom" style="font-size: 14px; border:1px solid black;">
                <?php 
                   if($rvr_reason_for_visit == 'Follow-up Visit'){
                     echo '<b> X</b>';
