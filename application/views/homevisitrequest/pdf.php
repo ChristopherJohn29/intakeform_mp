@@ -50,7 +50,7 @@
             </tr>
             <tr>
                <td colspan="2" width="505px"  height="20px">
-                <?='<label>  </label>'.$pi_patient_name?>
+                <?='<label></label>'.$pi_patient_name?>
                </td>
                <td width="173px" height="20px">
                <?=date('m/d/Y', strtotime($pi_dob))?>
@@ -88,7 +88,7 @@
             </tr>
             <tr>
                <td colspan="3" width="520px" height="18px">
-               <?='<label>  </label>'.$pi_address?>
+               <?='<label></label>'.$pi_address?>
                </td>
             </tr>
             <tr>
@@ -112,7 +112,7 @@
                   
                      <?php
                   if($ii_medicare){
-                     echo '<label>  </label>'.$ii_medicare;
+                     echo '<label></label>'.$ii_medicare;
                   } else {
                      echo '<br>';
                   }
@@ -123,7 +123,7 @@
                   
                   <?php
                   if($ii_ssn){
-                     echo '<label>  </label>'.$ii_ssn;
+                     echo '<label></label>'.$ii_ssn;
                   } else {
                      echo '<br>';
                   }
@@ -141,7 +141,7 @@
                   <label></label><br>
                   <?php 
                   if($tov == 'Home Visit (Physical)'){
-                    echo '<b> X</b>';
+                    echo '<b>X</b>';
                   }
                   
                   ?>
@@ -180,7 +180,7 @@
                <td colspan="" width="175px" height="20px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Referral from Home Health'){
-                    echo '<b> X</b>';
+                    echo '<b>X</b>';
                   }
                   
                   ?>
