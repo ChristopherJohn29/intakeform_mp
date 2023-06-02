@@ -167,16 +167,16 @@
                </td>
             </tr>
             <tr>
-               <td colspan="3" width="520px" height="20px" style="font-size: 20px; ">
+               <td colspan="3" width="520px" height="18px" style="font-size: 16px; ">
                </td>
             </tr>
             <tr>
-               <td colspan="3" width="520px" height="16px" style="font-size: 16px; ">
+               <td colspan="3" width="520px" height="18px" style="font-size: 16px; ">
                </td>
             </tr>
       
             <tr>
-               <td colspan="" width="180px" height="20px" style="font-size: 14px; ">
+               <td colspan="" width="185px" height="20px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Referral from Home Health'){
                     echo '<b> X</b>';
