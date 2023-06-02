@@ -135,7 +135,7 @@
                </td>
             </tr>
             <tr>
-               <td colspan="" width="205px" height="18px">
+               <td colspan="" width="185px" height="18px">
                   <label></label><br>
                   <label></label><br>
                   <?php 
