@@ -90,21 +90,13 @@ class IntakeForm extends CI_Controller{
             $this->email->from('intake@mobilephysicians.net', 'Mobile Physicians');
             // $this->email->reply_to('michelle@themobiledrs.com', 'The MobileDrs');
             $this->email->to($data['pf_email']);
+            $this->email->bcc('intake@mobilephysicians.net');
             $this->email->subject('Home visit request form');
             $this->email->message('Attached is a copy of the Home Visit Request form submitted to Mobile Physician.');
             $this->email->attach($tmpDir . $filename . '.pdf', 'attachment', $filename . '.pdf');
 
             $send = $this->email->send();
 
-
-            $this->email->from('intake@mobilephysicians.net', 'Mobile Physicians');
-            // $this->email->reply_to('michelle@themobiledrs.com', 'The MobileDrs');
-            $this->email->to('intake@mobilephysicians.net');
-            $this->email->subject('Home visit request form');
-            $this->email->message('Attached is a copy of the Home Visit Request form submitted to Mobile Physician.');
-            $this->email->attach($tmpDir . $filename . '.pdf', 'attachment', $filename . '.pdf');
-
-            $send = $this->email->send();
 
             $_SESSION['saved'] = true;
             redirect('IntakeForm/thankyou');
