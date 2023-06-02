@@ -123,7 +123,7 @@
                   
                   <?php
                   if($ii_ssn){
-                     echo '<label></label>'.$ii_ssn;
+                     echo '<label>  </label>'.$ii_ssn;
                   } else {
                      echo '<br>';
                   }
@@ -303,7 +303,7 @@
                <td width="205px" height="18px">
                <?='<label></label>'.$pf_phone?>
                </td>
-               <td width="200px" height="18px">
+               <td width="205px" height="18px">
                <?=$pf_fax?>
                </td>
                <td width="260px" height="18px">
