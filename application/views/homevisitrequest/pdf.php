@@ -300,7 +300,7 @@
                </td>
             </tr>
             <tr>
-               <td width="225px" height="18px">
+               <td width="200px" height="18px">
                <?='<label></label>'.$pf_phone?>
                </td>
                <td width="180px" height="18px">
