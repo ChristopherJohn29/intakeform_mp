@@ -17,7 +17,7 @@
    </head>
    <body>
 
-      <table style="font-size: 13px; margin-top: 230px;" cellpadding="3" border="1">
+      <table style="font-size: 13px; margin-top: 230px;" cellpadding="3">
          <tbody>
             <tr>
                <td colspan="2" width="488px"  height="10px" style="font-size: 12px;">
