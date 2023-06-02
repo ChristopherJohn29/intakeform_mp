@@ -202,7 +202,7 @@
                </td>
             </tr>
             <tr>
-               <td colspan="" width="265px" height="15px" style="font-size: 14px; ">
+               <td colspan="" width="250px" height="15px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Follow-up Visit'){
                     echo '<b> X</b>';
