@@ -235,9 +235,9 @@
                </td>
             </tr>
             <tr>
-               <td colspan="" width="200px" height="25px" style="font-size: 11px; ">
+               <td colspan="" width="200px" height="28px" style="font-size: 11px; ">
                </td>
-               <td colspan="" width="285px" height="25px" valign="top" style="font-size: 11px; ">
+               <td colspan="" width="285px" height="28px" valign="top" style="font-size: 11px; ">
                <?=$rvr_reason_for_visit_request?>
                </td>
             </tr>
