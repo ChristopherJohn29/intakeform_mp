@@ -176,7 +176,7 @@
             </tr>
       
             <tr>
-               <td colspan="" width="175px" height="20px" style="font-size: 14px; ">
+               <td colspan="" width="175px" height="15px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Referral from Home Health'){
                     echo '<b> X</b>';
