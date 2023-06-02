@@ -202,7 +202,7 @@
                </td>
             </tr>
             <tr>
-               <td colspan="" width="240px" height="40px" valign="bottom" style="font-size: 14px; border:1px solid black;">
+               <td colspan="" width="240px" height="40px" valign="bottom" style="font-size: 14px; border:1px solid black; vertical-align: bottom;">
                <?php 
                   if($rvr_reason_for_visit == 'Follow-up Visit'){
                     echo '<b> X</b>';
