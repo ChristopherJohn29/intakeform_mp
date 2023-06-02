@@ -185,7 +185,7 @@
                   ?>
                
                </td>
-               <td colspan="" width="289px" height="18px" style="font-size: 14px; ">
+               <td colspan="" width="289px" height="15px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Discharged from Hospital'){
                     echo '<b> X</b>';
