@@ -16,7 +16,6 @@
       </style>
    </head>
    <body>
-
       <table style="font-size: 13px; margin-top: 230px;" cellpadding="3" border="1">
          <tbody>
             <tr>
@@ -177,7 +176,7 @@
             </tr>
       
             <tr>
-               <td colspan="" width="175px" height="20px" style="font-size: 14px; ">
+               <td colspan="" width="175px" height="15px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Referral from Home Health'){
                     echo '<b> X</b>';
@@ -186,7 +185,7 @@
                   ?>
                
                </td>
-               <td colspan="" width="289px" height="20px" style="font-size: 14px; ">
+               <td colspan="" width="289px" height="15px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Discharged from Hospital'){
                     echo '<b> X</b>';
@@ -194,7 +193,7 @@
                   
                   ?>
                </td>
-               <td colspan="" width="100px" height="20px">
+               <td colspan="" width="100px" height="15px">
                <?php
                if($rvr_reason_for_visit == 'Discharged from Hospital'){
                 echo date('m/d/Y', strtotime($rvr_date_discharged));
@@ -203,8 +202,7 @@
                </td>
             </tr>
             <tr>
-               <td colspan="" width="240px" height="30px" valign="bottom" style="font-size: 14px; border:1px solid black; vertical-align: bottom;">
-                  
+               <td colspan="" width="240px" height="20px" valign="bottom" style="font-size: 14px; border:1px solid black;">
                <?php 
                   if($rvr_reason_for_visit == 'Follow-up Visit'){
                     echo '<b> X</b>';
@@ -212,7 +210,7 @@
                   
                   ?>
                </td>
-               <td colspan="" width="285px" height="30px" valign="top">
+               <td colspan="" width="285px" height="20px" valign="top">
                <?=$rvr_hospital?>
                </td>
             </tr>
