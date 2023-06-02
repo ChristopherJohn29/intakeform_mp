@@ -242,10 +242,6 @@
                </td>
             </tr>
             <tr>
-               <td colspan="3" height="15px" style="font-size: 1px; ">
-               </td>
-            </tr>
-            <tr>
                <td colspan="3" height="15px" style="font-size: 11px; ">
                <?php
                 if($rvr_additional_comment){
