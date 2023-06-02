@@ -202,7 +202,7 @@
                </td>
             </tr>
             <tr>
-               <td colspan="" width="240px" height="50px" valign="bottom" style="font-size: 14px; border:1px solid black; vertical-align: bottom;">
+               <td colspan="" width="240px" height="30px" valign="bottom" style="font-size: 14px; border:1px solid black; vertical-align: bottom;">
                   <label></label><br>
                   <label></label><br>
                <?php 
@@ -212,7 +212,7 @@
                   
                   ?>
                </td>
-               <td colspan="" width="285px" height="50px" valign="top">
+               <td colspan="" width="285px" height="30px" valign="top">
                <?=$rvr_hospital?>
                </td>
             </tr>
