@@ -203,6 +203,8 @@
             </tr>
             <tr>
                <td colspan="" width="240px" height="50px" valign="bottom" style="font-size: 14px; border:1px solid black; vertical-align: bottom;">
+                  <label></label><br>
+                  <label></label><br>
                <?php 
                   if($rvr_reason_for_visit == 'Follow-up Visit'){
                     echo '<b> X</b>';
