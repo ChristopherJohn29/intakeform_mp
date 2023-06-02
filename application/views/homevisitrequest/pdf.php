@@ -177,7 +177,7 @@
             </tr>
       
             <tr>
-               <td colspan="" width="175px" height="20px" style="font-size: 14px; ">
+               <td colspan="" width="175px" height="25px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Referral from Home Health'){
                     echo '<b>X</b>';
@@ -186,7 +186,7 @@
                   ?>
                
                </td>
-               <td colspan="" width="289px" height="20px" style="font-size: 14px; ">
+               <td colspan="" width="289px" height="25px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Discharged from Hospital'){
                     echo '<b> X</b>';
@@ -194,7 +194,7 @@
                   
                   ?>
                </td>
-               <td colspan="" width="100px" height="20px">
+               <td colspan="" width="100px" height="25px">
                <?php
                if($rvr_reason_for_visit == 'Discharged from Hospital'){
                 echo date('m/d/Y', strtotime($rvr_date_discharged));
