@@ -217,7 +217,7 @@
                </td>
             </tr>
             <tr>
-               <td colspan="" width="175px" height="20px" style="font-size: 14px; ">
+               <td colspan="" width="175px" height="18px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Transfer of Care'){
                     echo '<b>X</b>';
@@ -225,7 +225,7 @@
                   
                   ?>
                </td>
-               <td colspan="" width="289px" height="20px" valign="top" style="font-size: 14px; ">
+               <td colspan="" width="289px" height="18px" valign="top" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Other Reason'){
                     echo '<b>X</b>';
@@ -235,7 +235,7 @@
                </td>
             </tr>
             <tr>
-               <td colspan="" width="200px" height="15px" style="font-size: 14px; ">
+               <td colspan="" width="200px" height="15px" style="font-size: 11px; ">
                </td>
                <td colspan="" width="285px" height="15px" valign="top" style="font-size: 11px; ">
                <b><?=$rvr_reason_for_visit_request?></b>
