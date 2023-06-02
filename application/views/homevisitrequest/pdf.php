@@ -171,7 +171,7 @@
                </td>
             </tr>
             <tr>
-               <td colspan="3" width="520px" height="18px" style="font-size: 16px; ">
+               <td colspan="3" width="520px" height="15px" style="font-size: 16px; ">
                </td>
             </tr>
       
