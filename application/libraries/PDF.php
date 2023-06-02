@@ -134,7 +134,7 @@ class PDF {
 		// ---------------------------------------------------------
 
 		//Close and output PDF document
-		$pdf->Output($filename . '.pdf', 'D');
+		$pdf->Output($filename . '.pdf', 'F');
 	}
 
 	private function prepare_hv(string $html) 

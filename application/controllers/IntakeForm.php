@@ -71,35 +71,35 @@ class IntakeForm extends CI_Controller{
 
             $this->load->library(['email', 'PDF']);
 
-            // $config = array(
-            //     'wordwrap'  => true,
-            //     'protocol'  => 'smtp',
-            //     'smtp_host' => 'ssl://smtp.bizmail.yahoo.com',
-            //     'smtp_port' => 465,
-            //     'smtp_user' => 'intake@mobilephysicians.net',
-            //     'smtp_pass' => 'wvcqpkhzlnrgwmhz',
-            //     'mailtype'  => 'html',
-            //     'newline' 	=> "\r\n"
-            // );
+            $config = array(
+                'wordwrap'  => true,
+                'protocol'  => 'smtp',
+                'smtp_host' => 'ssl://smtp.bizmail.yahoo.com',
+                'smtp_port' => 465,
+                'smtp_user' => 'intake@mobilephysicians.net',
+                'smtp_pass' => 'wvcqpkhzlnrgwmhz',
+                'mailtype'  => 'html',
+                'newline' 	=> "\r\n"
+            );
 
-            // $this->email->initialize($config);
+            $this->email->initialize($config);
 
             $filename = 'Home Visit Form PDF';
             $this->pdf->generate_hv($html, $tmpDir . $filename);
 
-            // $this->email->from('intake@mobilephysicians.net', 'Mobile Physicians');
-            // // $this->email->reply_to('michelle@themobiledrs.com', 'The MobileDrs');
-            // $this->email->to($data['pf_email']);
-            // $this->email->bcc('intake@mobilephysicians.net');
-            // $this->email->subject('Home visit request form');
-            // $this->email->message('Attached is a copy of the Home Visit Request form submitted to Mobile Physician.');
-            // $this->email->attach($tmpDir . $filename . '.pdf', 'attachment', $filename . '.pdf');
+            $this->email->from('intake@mobilephysicians.net', 'Mobile Physicians');
+            // $this->email->reply_to('michelle@themobiledrs.com', 'The MobileDrs');
+            $this->email->to($data['pf_email']);
+            $this->email->bcc('intake@mobilephysicians.net');
+            $this->email->subject('Home visit request form');
+            $this->email->message('Attached is a copy of the Home Visit Request form submitted to Mobile Physician.');
+            $this->email->attach($tmpDir . $filename . '.pdf', 'attachment', $filename . '.pdf');
 
-            // $send = $this->email->send();
+            $send = $this->email->send();
 
 
-            // $_SESSION['saved'] = true;
-            // redirect('IntakeForm/thankyou');
+            $_SESSION['saved'] = true;
+            redirect('IntakeForm/thankyou');
         }
     
 	}
