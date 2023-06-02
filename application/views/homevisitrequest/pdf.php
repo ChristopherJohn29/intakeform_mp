@@ -16,7 +16,7 @@
       </style>
    </head>
    <body>
-      <table style="font-size: 13px; margin-top: 230px;" cellpadding="3" border="1">
+      <table style="font-size: 13px; margin-top: 230px;" cellpadding="3">
          <tbody>
             <tr>
                <td colspan="2" width="488px"  height="10px" style="font-size: 12px;">
@@ -171,12 +171,12 @@
                </td>
             </tr>
             <tr>
-               <td colspan="3" width="520px" height="10px" style="font-size: 14px; ">
+               <td colspan="3" width="520px" height="18px" style="font-size: 16px; ">
                </td>
             </tr>
       
             <tr>
-               <td colspan="" width="175px" height="15px" style="font-size: 14px; ">
+               <td colspan="" width="175px" height="20px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Referral from Home Health'){
                     echo '<b> X</b>';
@@ -185,7 +185,7 @@
                   ?>
                
                </td>
-               <td colspan="" width="289px" height="15px" style="font-size: 14px; ">
+               <td colspan="" width="289px" height="18px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Discharged from Hospital'){
                     echo '<b> X</b>';
@@ -193,7 +193,7 @@
                   
                   ?>
                </td>
-               <td colspan="" width="100px" height="15px">
+               <td colspan="" width="100px" height="18px">
                <?php
                if($rvr_reason_for_visit == 'Discharged from Hospital'){
                 echo date('m/d/Y', strtotime($rvr_date_discharged));
@@ -202,7 +202,7 @@
                </td>
             </tr>
             <tr>
-               <td colspan="" width="240px" height="20px" valign="bottom" style="font-size: 14px; border:1px solid black;">
+               <td colspan="" width="240px" height="15px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Follow-up Visit'){
                     echo '<b> X</b>';
@@ -210,12 +210,12 @@
                   
                   ?>
                </td>
-               <td colspan="" width="285px" height="20px" valign="top">
+               <td colspan="" width="285px" height="15px" valign="top">
                <?=$rvr_hospital?>
                </td>
             </tr>
             <tr>
-               <td colspan="" width="205px" height="20px" style="font-size: 14px; ">
+               <td colspan="" width="205px" height="15px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Transfer of Care'){
                     echo '<b>X</b>';
@@ -302,7 +302,7 @@
                </td>
             </tr>
             <tr>
-               <td width="225px" height="18px">
+               <td width="231px" height="18px">
                <?='<label>  </label>'.$pf_phone?>
                </td>
                <td width="180px" height="18px">
