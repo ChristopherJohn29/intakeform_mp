@@ -203,7 +203,7 @@
                </td>
             </tr>
             <tr>
-               <td colspan="" width="240px" height="30px" valign="bottom" style="font-size: 14px; border:1px solid black; vertical-align: bottom;">
+               <td rowspan="2" width="240px" height="20px" valign="bottom" style="font-size: 14px; border:1px solid black; vertical-align: bottom;">
                <label style="font-size: 1px; height:2px;"></label><br>
                <?php 
                   if($rvr_reason_for_visit == 'Follow-up Visit'){
@@ -212,7 +212,7 @@
                   
                   ?>
                </td>
-               <td colspan="" width="285px" height="30px" valign="top">
+               <td colspan="" width="285px" height="20px" valign="top">
                <?=$rvr_hospital?>
                </td>
             </tr>
