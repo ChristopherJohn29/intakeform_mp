@@ -16,7 +16,7 @@
       </style>
    </head>
    <body>
-      <label style="position:absolute; top: 10px;">test</label>
+      <label style="position:absolute; top: 20px; font-size:10px;">test</label>
       <table style="font-size: 13px; margin-top: 230px;" cellpadding="3" border="1">
          <tbody>
             <tr>
