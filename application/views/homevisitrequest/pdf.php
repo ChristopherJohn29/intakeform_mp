@@ -202,7 +202,7 @@
                </td>
             </tr>
             <tr>
-               <td colspan="" width="240px" height="15px" style="font-size: 14px; ">
+               <td colspan="" width="240px" height="20px" style="font-size: 14px; border:1px solid;">
                <?php 
                   if($rvr_reason_for_visit == 'Follow-up Visit'){
                     echo '<b> X</b>';
@@ -210,12 +210,12 @@
                   
                   ?>
                </td>
-               <td colspan="" width="285px" height="15px" valign="top">
+               <td colspan="" width="285px" height="20px" valign="top">
                <?=$rvr_hospital?>
                </td>
             </tr>
             <tr>
-               <td colspan="" width="205px" height="15px" style="font-size: 14px; ">
+               <td colspan="" width="205px" height="20px" style="font-size: 14px; ">
                <?php 
                   if($rvr_reason_for_visit == 'Transfer of Care'){
                     echo '<b>X</b>';
