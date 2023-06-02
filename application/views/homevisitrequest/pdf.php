@@ -245,7 +245,7 @@
                <td colspan="3" height="15px" style="font-size: 11px; ">
                <?php
                 if($rvr_additional_comment){
-                  echo '<label>  </label>'.$rvr_additional_comment;
+                  echo '<label></label>'.$rvr_additional_comment;
                 } else {
                   echo '<br>';
                 }
@@ -289,7 +289,7 @@
             </tr>
             <tr>
                <td height="15px" width="456px">
-               <?='<label>  </label>'.$pf_name_of_facility?>
+               <?='<label></label>'.$pf_name_of_facility?>
                </td>
                <td  height="15px">
                <?=$pf_contact_person?>
@@ -301,7 +301,7 @@
             </tr>
             <tr>
                <td width="225px" height="18px">
-               <?='<label>  </label>'.$pf_phone?>
+               <?='<label></label>'.$pf_phone?>
                </td>
                <td width="180px" height="18px">
                <?=$pf_fax?>
@@ -316,7 +316,7 @@
             </tr>
             <tr>
                <td colspan="3" height="18px" >
-               <?='<label>  </label>'.$pf_address?>
+               <?='<label></label>'.$pf_address?>
                </td>
             </tr>
             <tr>
