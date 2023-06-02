@@ -193,7 +193,7 @@
                   
                   ?>
                </td>
-               <td colspan="" width="100px" height="18px">
+               <td colspan="" width="100px" height="15px">
                <?php
                if($rvr_reason_for_visit == 'Discharged from Hospital'){
                 echo date('m/d/Y', strtotime($rvr_date_discharged));
@@ -302,7 +302,7 @@
                </td>
             </tr>
             <tr>
-               <td width="231px" height="18px">
+               <td width="225px" height="18px">
                <?='<label>  </label>'.$pf_phone?>
                </td>
                <td width="180px" height="18px">
